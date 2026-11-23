@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Iconos-->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Clase 8</title>
+  </head>
+  <body>
+    <header>
+      <p>20% de descuento en todos los productos!</p>
+      <div class="titulo-tienda">
+        <img src="./img/logo-tienda-super.svg" alt="logo-tienda" />
+        <a href="./index.html"><h1>Nombre Tienda</h1> </a>
+      </div>
+      <nav>
+        <ul>
+          <li>Contacto</li>
+          <li>Registrarme</li>
+          <li>Ingresar</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="formulario">
+        <h2>Añadí tu super!</h2>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+
+        <form>
+          <div class="columnas-formulario">
+            <div class="columna1-formulario">
+              <label for="nombre">*Nombre</label>
+              <input type="text" id="nombre" required />
+
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" />
+
+              <textarea id="descripcion" placeholder="Descripción"></textarea>
+            </div>
+
+            <div class="columna2-formulario">
+              <label for="especie">*Especie</label>
+              <select id="especie" required>
+                <option value="humano">Humano</option>
+                <option value="alienigena">Alienígena</option>
+                <option value="mutante">Mutante</option>
+              </select>
+
+              <label for="foto">Agregar Foto</label>
+              <input type="file" id="foto" />
+
+              <fieldset>
+                <legend>Poderes</legend>
+                <label>
+                  <input type="checkbox" name="poder" value="volar" />
+                  Volar
+                </label>
+
+                <label>
+                  <input type="checkbox" name="poder" value="inteligencia" />
+                  Superinteligencia
+                </label>
+
+                <label>
+                  <input type="checkbox" name="poder" value="laser" />
+                  Vista de rayo láser
+                </label>
+
+                <label>
+                  <input type="checkbox" name="poder" value="billetera" />
+                  Billetera gorda
+                </label>
+              </fieldset>
+              <hr />
+
+              <fieldset>
+                <legend>Tipo de personaje</legend>
+                <label>
+                  <input type="radio" name="tipo" value="heroe" />
+                  Héroe / Heroína
+                </label>
+                <label>
+                  <input type="radio" name="tipo" value="villano" />
+                  Villano / Villana
+                </label>
+              </fieldset>
+            </div>
+          </div>
+
+          <button type="submit" class="boton-agregar">Añadir</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Todos los derechos reservados a TALLER DE DISEÑO WEB</p>
+      <img src="./img/logo-github.png" alt="logo-GITHUB" />
+    </footer>
+  </body>
+</html>
