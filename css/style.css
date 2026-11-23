@@ -34,7 +34,17 @@ header h1 :visited {
 }
 .titulo-tienda {
   display: flex;
+}  
+.titulo-tienda a {
+    color: white;
+    text-decoration: none;
 }
+
+.titulo-tienda a:visited {
+    color: white;
+    text-decoration: none;
+}
+
 nav {
   background-color: black;
   color: white;
